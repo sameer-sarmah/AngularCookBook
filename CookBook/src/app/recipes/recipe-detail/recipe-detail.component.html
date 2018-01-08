@@ -1,0 +1,35 @@
+<!-- details page of recipe -->
+<div style="width: 100%;height: 100%;">
+<div class="flex-column-container" style="height:100%;">
+<div class="flex-row-container flex-item textAlignCenter" style="height:55%;">
+<div class="flex-item ">
+ <img src="{{selectedRecipe.image_url}}" style="height:100%;">
+</div>
+<div class="flex-item text-block">
+<h2>{{selectedRecipe.title}}</h2>
+</div>
+<div class="flex-item ">
+  <button type="button" class="add-to-cart" (click)="addToCart()">Add</button>
+</div>
+</div>
+
+<div class="flex-row-container flex-item darkGreyBG " style="height:45%;">
+<div class="flex-item text-block whiteTextColor width40pc marginLeft5pc">
+<h2>Ingredients:</h2>
+   <ul>
+    <li *ngFor="let ingredient of selectedRecipe.ingredients let i = index " >
+     {{ingredient}}
+    </li>
+  </ul>
+</div>
+<div class="flex-item text-block whiteTextColor width60pc">
+<h2>Directions:</h2>
+  <ul>
+    <li *ngFor="let direction of selectedRecipe.directions let i = index " >
+     {{direction}}
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+</div>

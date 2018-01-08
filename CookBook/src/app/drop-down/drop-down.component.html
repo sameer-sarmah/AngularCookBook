@@ -1,0 +1,19 @@
+<div class="drop-down">
+		<ul>
+			<li>
+				<a href="/blog">
+					<div>
+              {{text}}
+					</div>
+				</a>
+				<div>
+            <ul class="recipe-item">
+                <li *ngFor="let menuItem of menuItems"  (click)="menuItemClicked(menuItem)">
+                 {{menuItem.text}}
+                </li>
+              </ul>
+				</div>
+			</li>
+    </ul>
+
+		</div>

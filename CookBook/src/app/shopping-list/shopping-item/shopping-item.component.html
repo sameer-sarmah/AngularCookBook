@@ -1,0 +1,15 @@
+<div class="flex-row-container list-item">
+	<div class="image-container flex-item">
+		<img src="{{selectedRecipe.image_url}}">
+	</div>
+	<div class="text-container flex-column-container flex-item">
+		<h3 class="flex-item">Recipe Item:{{selectedRecipe.recipe_id}}</h3>
+		<h3 class="flex-item">{{selectedRecipe.title}}</h3>
+		<div class="flex-item">Social Rank:{{selectedRecipe.social_rank}}</div>
+	</div>	
+	<div class="flex-row-container list-item">
+		<div class="flex-item svg-icon" (click)="removeFromCart()">
+			<img src="assets/images/rubbish-bin.svg">
+		</div>
+	</div>
+</div>

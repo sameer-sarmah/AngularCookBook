@@ -1,0 +1,11 @@
+<!-- list of recipe -->
+<div class="flex-column-container lightBlueBG scroll-box">
+<div class="flex-item text-block paleBlackTextColor ">
+   <ul class="recipe-item">
+    <li *ngFor="let recipeItem of recipes"  (click)="listItemClicked(recipeItem)">
+     {{recipeItem.title}}
+    </li>
+  </ul>
+</div>
+
+</div>

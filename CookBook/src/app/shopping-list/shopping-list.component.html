@@ -1,0 +1,11 @@
+
+<div class="flex-item flex-row-container"  style="height:100%;width:100%;"  >
+<div *ngIf="recipes.length>0">
+  <app-shopping-item *ngFor="let recipe of recipes" [selectedRecipe]="recipe"></app-shopping-item>
+</div>
+
+<div *ngIf="recipes.length==0">
+    <p>The Shopping cart is empty</p>
+</div>
+
+</div>
