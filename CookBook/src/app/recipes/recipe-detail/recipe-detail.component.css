@@ -69,3 +69,20 @@ margin-left:5%;
     margin-left: 10px;
     cursor: pointer;
 }
+
+
+.height80pc{
+    height: 80%;
+}
+
+.height20pc{
+    height: 20%;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.no-margin{
+    margin: 0;
+}

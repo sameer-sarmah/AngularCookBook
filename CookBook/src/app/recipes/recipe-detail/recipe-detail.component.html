@@ -2,7 +2,7 @@
 <div style="width: 100%;height: 100%;">
 <div class="flex-column-container" style="height:100%;">
 <div class="flex-row-container flex-item textAlignCenter" style="height:55%;">
-<div class="flex-item ">
+<div class="flex-item " style="height:100%;">
  <img src="{{selectedRecipe.image_url}}" style="height:100%;">
 </div>
 <div class="flex-item text-block">
@@ -14,17 +14,17 @@
 </div>
 
 <div class="flex-row-container flex-item darkGreyBG " style="height:45%;">
-<div class="flex-item text-block whiteTextColor width40pc marginLeft5pc">
-<h2>Ingredients:</h2>
-   <ul>
+<div class="flex-item text-block whiteTextColor width40pc marginLeft5pc" style="height:100%;"> 
+<h2 class="height20pc no-margin">Ingredients:</h2>
+   <ul class="height80pc no-margin overflow-hidden">
     <li *ngFor="let ingredient of selectedRecipe.ingredients let i = index " >
      {{ingredient}}
     </li>
   </ul>
 </div>
-<div class="flex-item text-block whiteTextColor width60pc">
-<h2>Directions:</h2>
-  <ul>
+<div class="flex-item text-block whiteTextColor width60pc" style="height:100%;">
+<h2 class="height20pc no-margin overflow-hidden">Directions:</h2>
+  <ul class="height80pc no-margin">
     <li *ngFor="let direction of selectedRecipe.directions let i = index " >
      {{direction}}
     </li>
